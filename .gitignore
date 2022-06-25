@@ -1,0 +1,9 @@
+env/
+.vscode/
+.ipynb_checkpoints/
+__pycache__/
+
+food_6000.csv
+food_6000.xlsx
+
+*.ipynb
