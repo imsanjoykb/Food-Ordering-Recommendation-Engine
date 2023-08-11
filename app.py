@@ -13,7 +13,7 @@ st.set_page_config(
     page_icon=':pizza:'
 )
 
-@st.cache()
+@st.cache_data()
 def fetch_and_clean_data(file_path):
     df = pd.read_csv(file_path)
 
@@ -51,8 +51,6 @@ page = st.sidebar.radio(
     options=list(PAGES.keys())
 )
 
-with st.sidebar.beta_expander("Company Site"):
-    st.write("https://datasense.services/")
 
 
 content = PAGES[page]
